@@ -316,9 +316,10 @@
 
     
     .video{
-        
+        display: grid;
         flex-flow: column nowrap;
         justify-content: center;
+        
     }
     .videoTitle{
         width: 100%;
@@ -334,8 +335,8 @@
   
     /*video*/
     .videoAside{
-        padding: 0px ;
-        transform: scale(0.8);
+        
+        transform: scale(1);
     }
 
 }
@@ -402,6 +403,13 @@
         padding-right: 20px;        
     }
     
+
+    .videoAside{
+        
+        transform: scale(0.9);
+        padding-left: 50px;
+        
+    }
 }
 
 
@@ -412,7 +420,6 @@
     .gridItems{
         border: 3px solid white;
     }
-
 
 }
 
@@ -437,11 +444,6 @@
     }
 
     .headerNav ul li{
-        padding: 0px 2px;
-    }
-
-    .footer{
-
         font-size: 10px;
 
     }
