@@ -1,0 +1,603 @@
+
+
+.header{ 
+    width: 100%;
+    background-color: #fcb7af;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+    &Title{
+        font-family: 'Abril Fatface', cursive;
+        font-size: 50px;
+        text-align: left;
+        font-weight: bold;
+        color: rgb(204, 55, 159); 
+        align-items: flex-start;
+    }
+
+    &Nav{
+        width: 45%;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        align-items: flex-end;
+        transition: transform 1s;
+        padding-top: 30px;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            list-style: none;
+
+            li{
+                display: block;
+                padding-left: 20px;
+                
+                &:hover{
+                    background-color: violet;
+                    
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+.biografia{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+
+    &Title{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    font-weight: normal;
+    color: rgb(204, 55, 159) ; 
+    }
+
+    &Descripcion{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: black;
+    display:inline-block;
+    padding: 0px 15px;
+}
+    
+}
+
+
+.video{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 2s ;
+
+    &Title{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(204, 55, 159) ;
+    }
+
+
+    &Aside{
+    width: 50%;
+    height: auto;
+    padding: 0px 10px;
+    margin-top: 20px;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: #fcb7af;
+    font-style: initial ;
+    font-size: 20px;
+    padding-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    img{
+    height: 8vh;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    }
+}
+
+
+
+.emmaPelicula{
+    width: 100%;
+    height: 10vh;
+    font-family: 'Abril Fatface', cursive;
+    color: #fcb7af;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 90px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.boton {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: blue;
+
+   &:hover {
+  background-color: green;
+  color: black
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-1-5 {
+  border: 2px solid black;   
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  
+  @media screen and (min-width: 700px) {
+    & {
+      float: left;
+      width: 50%;
+    }
+    &:nth-child(odd) {
+      clear: left;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    & {      
+      width: 33.3333333%;
+    }
+    &:nth-child(3n+1) {
+      clear: left;
+    }
+    &:nth-child(odd) {
+      clear: none;
+    }    
+  }
+  
+  @media screen and (min-width: 1120px) {
+    & {
+       width: 20%;
+    }
+    &:nth-child(odd), &:nth-child(3n+1) {
+       clear: none;
+    }    
+  }
+  
+}
+.grid-1-5:hover {
+  
+  
+  box-shadow: 0px 0px 10px 0px green;
+  transform: scale(1.025);
+  z-index: 2;
+
+  &:before, &:after {
+    content: ""; 
+    position: absolute; 
+    
+    top: -2px; 
+    bottom: -2px; 
+    width: 2px;    
+  }
+
+  &:before { 
+    left: -2px; 
+  }
+  &:after { 
+    right: -2px; 
+  }  
+
+  & .button {
+    background-color: green;
+       
+  }
+}
+h3, ul {
+  margin: 0
+}
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+
+p, ul {
+  margin:0 0 1.5em
+}
+ul {
+  color: #796583;
+  font-size: 0.9em;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 0 0 0.8333333333333333em;
+  }
+}
+.button {
+  background-color: #9c83aa;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px)  {
+
+
+  /* encabezado */
+
+  
+  .headerNav{
+      width: 100%;
+      align-items: center;
+      padding-top: 0px; 
+      font-size: 20px;
+      padding: 0px 10px;
+  }
+
+  
+  .video{
+      display: grid;
+      flex-flow: column nowrap;
+      justify-content: center;
+      
+  }
+  .videoTitle{
+      width: 100%;
+      padding: 0px; 
+  }
+
+}
+
+
+
+@media screen and (max-width: 860px)  {
+
+
+  /*video*/
+  .videoAside{
+      
+      transform: scale(1);
+  }
+
+}
+  
+  
+
+@media screen and (max-width: 650px)  {
+
+  
+  /* encabezado */
+
+  
+  .headerTitle{
+      font-size: 40px;
+      text-align: center;
+      align-items: center;
+  }
+
+  .headerNav{
+      font-size: 15px;
+      padding: 0px;
+      width: 100%;
+  }
+
+
+  /* biografia*/
+
+  .biografiaTitle{
+      font-size: 30px; 
+  }
+  .biografiaDescripcion{
+      font-size: 15px;
+      line-height: 1;
+      color: black;
+      padding: 0px 5px;
+  }
+
+
+  /*video*/
+
+  .videoTitle{
+      font-size: 20px;
+  }
+
+
+  /*pie*/
+
+  .footer{
+      font-size: 15px;   
+  }
+}
+
+
+/*QUIERES VER PELI DE EMMA*/
+
+@media screen and (max-width: 600px){
+
+  .emmaPelicula{
+     
+      font-size: 25px;
+      padding-left: 20px;
+      padding-right: 20px;        
+  }
+  
+
+  .videoAside{
+      
+      transform: scale(0.9);
+      padding-left: 50px;
+      
+  }
+}
+
+
+/*media grid galeria*/
+
+@media screen and (max-width: 550px) {
+
+  .gridItems{
+      border: 3px solid white;
+  }
+
+}
+
+/*media de header mobile*/
+
+@media screen and (max-width: 480px){
+  /* encabezado */
+
+  
+  .headerNav{
+      font-size: 10px;
+  }
+
+  .headerTitle{
+      
+      font-size: 30px;
+      
+  }
+
+  .headerNav ul{
+      padding: 0px;
+  }
+
+  .headerNav ul li{
+      font-size: 10px;
+
+  }
+
+  .footer img{
+      margin-left: 50px;
+      
+  }
+  
+}
+
+
+
+@media screen and (max-width: 290px) {
+
+  .videoTitle{
+    font-size: 15px;
+}
+
+}

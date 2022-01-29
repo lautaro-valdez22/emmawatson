@@ -23,103 +23,142 @@
 
     <!--css-->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../scss/style.css">
 </head>
 
 
 <body>
 
     <header class="header">
-        <h1 class="headerTitle">EMMA WATSON</h1>
 
-        <nav class="headerNav">
-            <!-- Lista Desordenada -->
+        <nav class="navbar navbar-light  fixed-top header ">
 
-            <ul>
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="./peliculas.html"> Peliculas </a> </li>
-                <li> <a href="./premios.html"> Premios </a> </li>
-                <li> <a href="./galeria.html"> Galeria </a> </li>
-                <li> <a href="./redes-sociales.html"> Redes Sociales </a> </li>
-            </ul>
+            <div class="container-fluid" >
+
+                <h1 class="headerTitle">EMMA </h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="headerTitle">EMMA WATSON</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+
+
+                    <div class="headerNav">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/peliculas.html">PELICULAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/premios.html">PREMIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/galeria.html">GALERIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/redes-sociales.html">REDES SOCIALES</a>
+                            </li>
+                        </ul>   
+                        
+                    </div>
+                </div>
+            </div>
         </nav>
+
+
+
+
 
     </header>
 
-    <div class="emmaPelicula">
-        <section>
-            <p> ¿QUIERES VER ALGUNAS DE LAS PELICULAS DE EMMA GRATIS?</p>
-        </section>
+    
+    <div class="mt-5 pt-5 "> 
+
+        <div class="emmaPelicula">
+            <section>
+                <p> ¿QUIERES VER ALGUNAS DE LAS PELICULAS DE EMMA GRATIS?</p>
+            </section>
+        </div>
+
+        <form class="row g-3 m-5">
+
+            <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" v required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationDefault02" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="validationDefault05" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+
+
+            <div class="col-md-12">
+                <label for="validationDefaultUsername" class="form-label">E-mail</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername"
+                        aria-describedby="inputGroupPrepend2" required>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <label for="validationServer04" class="form-label">Peliculas</label>
+                <select class="form-select " id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                    <option value="seleccione una opcion......"> seleccione una opcion.... </option>
+                    <option value="Harry potter y la piedra Filosofal"> Harry potter y la piedra Filosofal </option>
+                    <option value="Harry potter y la camara secreta"> Harry potter y la camara secreta </option>
+                    <option value="Harry potter y el prisionero de Askaban"> Harry potter y el prisionero de Askaban
+                    </option>
+                    <option value="Harry potter y el caliz de fuego"> Harry potter y el caliz de fuego </option>
+                    <option value="Harry potter y la orden del fenix"> Harry potter y la orden del fenix </option>
+                    <option value="Harry potter y el misterio del principe"> Harry potter y el misterio del principe
+                    </option>
+                    <option value="Harry potter y las reliquias de la muerte"> Harry potter y las reliquias de la muerte
+                    </option>
+                    <option value="Harry potter y las reliquias de la muerte 2"> Harry potter y las reliquias de lamuerte 2
+                    </option>
+                </select>
+            </div>
+
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        Acepto terminos y condiciones
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="col-12">
+                <button class="boton" >Enviar Formulario</button>
+            </div>
+
+        </form>
     </div>
-
-    <form class="row g-3 m-5">
-
-        <div class="col-md-6">
-            <label for="validationDefault01" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="validationDefault01" v required>
-        </div>
-        <div class="col-md-6">
-            <label for="validationDefault02" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="validationDefault02" required>
-        </div>
-
-        <div class="col-md-6">
-            <label for="validationDefault03" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" id="validationDefault03" required>
-        </div>
-
-        <div class="col-md-6">
-            <label for="validationDefault05" class="form-label">Telefono</label>
-            <input type="text" class="form-control" id="validationDefault05" required>
-        </div>
-
-
-        <div class="col-md-12">
-            <label for="validationDefaultUsername" class="form-label">E-mail</label>
-            <div class="input-group">
-                <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                <input type="text" class="form-control" id="validationDefaultUsername"
-                    aria-describedby="inputGroupPrepend2" required>
-            </div>
-        </div>
-
-
-        <div class="col-md-12">
-            <label for="validationServer04" class="form-label">Peliculas</label>
-            <select class="form-select " id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                <option value="seleccione una opcion......"> seleccione una opcion.... </option>
-                <option value="Harry potter y la piedra Filosofal"> Harry potter y la piedra Filosofal </option>
-                <option value="Harry potter y la camara secreta"> Harry potter y la camara secreta </option>
-                <option value="Harry potter y el prisionero de Askaban"> Harry potter y el prisionero de Askaban
-                </option>
-                <option value="Harry potter y el caliz de fuego"> Harry potter y el caliz de fuego </option>
-                <option value="Harry potter y la orden del fenix"> Harry potter y la orden del fenix </option>
-                <option value="Harry potter y el misterio del principe"> Harry potter y el misterio del principe
-                </option>
-                <option value="Harry potter y las reliquias de la muerte"> Harry potter y las reliquias de la muerte
-                </option>
-                <option value="Harry potter y las reliquias de la muerte 2"> Harry potter y las reliquias de lamuerte 2
-                </option>
-            </select>
-        </div>
-
-
-        <div class="col-12">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                    Acepto terminos y condiciones
-                </label>
-            </div>
-        </div>
-
-
-        <div class="col-12">
-            <button class="btn btn-primary" type="submit">Enviar Formulario</button>
-        </div>
-
-    </form>
-
 
 
     <footer class="footer">
@@ -127,8 +166,8 @@
         <a href="https://www.instagram.com/lautarovaldez.ok/?hl=es-la"> <img src="/images/pngwing.com.png" alt=""></a>
 
         <p>
-            @Copyrigth 2021
-            lautarovaldez.ok@hmail.com
+            @Copyrigth 2022
+            
         </p>
 
     </footer>

@@ -1,0 +1,102 @@
+<div class="gridContainer">
+
+        <section class="gridItems img1">
+            <!-- img -->
+
+            <img width="100%" height="100%" src="../images/tumblr1.jpg" alt="EMMAWATSON">
+        </section>
+
+        <section class="gridItems img2">
+
+            <!-- img -->
+
+            <img width="100%" src="../images/tumblr2.jpg" alt="EMMAWATSON">
+
+        </section>
+
+        <section class="gridItems img3">
+            <!-- img -->
+
+            <img width="100%" height="100%" src="../images/tumblr3.png" alt="EMMAWATSON">
+        </section>
+
+        <section class="gridItems img4">
+
+            <!-- img -->
+
+            <img width="100%" height="100%" src="../images/tumblr4.jpg" alt="EMMAWATSON">
+
+        </section>
+    </div>
+
+
+    <div class="carrusel">
+        <div id="carouselExampleIndicators" class="carousel slide carruselItem" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <iframe width="560" height="477" src="https://www.youtube.com/embed/HcTq-BAg5Ag"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="d-block w-100"></iframe>
+                </div>
+
+
+
+                <div class="carousel-item">
+                    <iframe width="560" height="477" src="https://www.youtube.com/embed/XQJtuITSDs4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="d-block w-100 "></iframe>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </div>
+
+
+    <div class="gridContainer">
+
+        <section class="gridItems img1">
+            <!-- img -->
+
+            <img width="100%" height="100%" src="../images/tumblr5.jpg" alt="EMMAWATSON">
+        </section>
+
+        <section class="gridItems img2">
+            <!-- img -->
+
+            <img width="100%" height="100%" src="../images/nueva.jpg" alt="EMMAWATSON">
+        </section>
+
+        <section class="gridItems img3">
+
+            <!-- img -->
+
+            <img width="100%" height="100%" src="../images/nueva2.jpg" alt="EMMAWATSON">
+
+        </section>
+
+        <section class="gridItems img4">
+            <!-- img -->
+
+            <img width="100%" height="100%" src="../images/nueva3.jpg" alt="EMMAWATSON">
+        </section>
+    </div>

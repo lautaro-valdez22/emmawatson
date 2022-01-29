@@ -23,137 +23,144 @@
 
     <!--css-->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/scss/style.css">
 </head>
 
 
 
 
-<body>
+<body >
 
     <header class="header">
-        <h1 class="headerTitle">EMMA WATSON</h1>
-        <nav class="headerNav">
-            <!-- Lista Desordenada -->
-            <ul>
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="./peliculas.html"> Peliculas </a> </li>
-                <li> <a href="./premios.html"> Premios </a> </li>
-                <li> <a href="./galeria.html"> Galeria </a> </li>
-                <li> <a href="./redes-sociales.html"> Redes Sociales </a> </li>
-            </ul>
+
+        <nav class="navbar navbar-light  fixed-top header ">
+
+            <div class="container-fluid" >
+
+                <h1 class="headerTitle">EMMA </h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="headerTitle">EMMA WATSON</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+
+
+                    <div class="headerNav">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/peliculas.html">PELICULAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/premios.html">PREMIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/galeria.html">GALERIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/redes-sociales.html">REDES SOCIALES</a>
+                            </li>
+                        </ul>   
+                        
+                    </div>
+                </div>
+            </div>
         </nav>
+
+
+
+
+
     </header>
 
-    <div class="gridContainer">
-
-        <section class="gridItems img1">
-            <!-- img -->
-
-            <img width="100%" height="100%" src="../images/tumblr1.jpg" alt="EMMAWATSON">
-        </section>
-
-        <section class="gridItems img2">
-
-            <!-- img -->
-
-            <img width="100%" src="../images/tumblr2.jpg" alt="EMMAWATSON">
-
-        </section>
-
-        <section class="gridItems img3">
-            <!-- img -->
-
-            <img width="100%" height="100%" src="../images/tumblr3.png" alt="EMMAWATSON">
-        </section>
-
-        <section class="gridItems img4">
-
-            <!-- img -->
-
-            <img width="100%" height="100%" src="../images/tumblr4.jpg" alt="EMMAWATSON">
-
-        </section>
-    </div>
 
 
-    <div class="carrusel">
-        <div id="carouselExampleIndicators" class="carousel slide carruselItem" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
 
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <iframe width="560" height="477" src="https://www.youtube.com/embed/HcTq-BAg5Ag"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="d-block w-100"></iframe>
+
+    <div class="container gallery-container  ">
+
+        <div class="mt-5 pt-5">
+            <h1 class="biografiaTitle">GALERIA</h1>
+
+            
+
+            <div class="tz-gallery">
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/tumblr1.jpg">
+                            <img src="../images/tumblr1.jpg" alt="Park">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/tumblr2 (1).jpg">
+                            <img src="../images/tumblr2 (1).jpg" alt="Bridge">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/tumblr3 (1).jpg">
+                            <img src="../images/tumblr3 (1).jpg" alt="Tunnel">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/tumblr4.jpg">
+                            <img src="../images/tumblr4.jpg" alt="Coast">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/tumblr5.jpg">
+                            <img src="../images/tumblr5.jpg" alt="Rails">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/nueva2.jpg">
+                            <img src="../images/nueva2.jpg" alt="Traffic">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/new.jpg">
+                            <img src="../images/new.jpg" alt="Rocks">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/new2 (2).jpg">
+                            <img src="../images/new2 (2).jpg" alt="Benches">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 my-3">
+                        <a class="lightbox" href="../images/new3.jpg">
+                            <img src="../images/new3.jpg" alt="Sky">
+                        </a>
+                    </div>
                 </div>
 
-
-
-                <div class="carousel-item">
-                    <iframe width="560" height="477" src="https://www.youtube.com/embed/XQJtuITSDs4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="d-block w-100 "></iframe>
-                </div>
-
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-
         </div>
     </div>
 
 
-    <div class="gridContainer">
 
-        <section class="gridItems img1">
-            <!-- img -->
 
-            <img width="100%" height="100%" src="../images/tumblr5.jpg" alt="EMMAWATSON">
-        </section>
 
-        <section class="gridItems img2">
-            <!-- img -->
 
-            <img width="100%" height="100%" src="../images/nueva.jpg" alt="EMMAWATSON">
-        </section>
-
-        <section class="gridItems img3">
-
-            <!-- img -->
-
-            <img width="100%" height="100%" src="../images/nueva2.jpg" alt="EMMAWATSON">
-
-        </section>
-
-        <section class="gridItems img4">
-            <!-- img -->
-
-            <img width="100%" height="100%" src="../images/nueva3.jpg" alt="EMMAWATSON">
-        </section>
-    </div>
     <footer class="footer">
 
         <a href="https://www.instagram.com/lautarovaldez.ok/?hl=es-la"> <img src="../images/pngwing.com.png" alt=""></a>
 
         <p>
-            @Copyrigth 2021
-            lautarovaldez.ok@hmail.com
+            @Copyrigth 2022
+           
         </p>
 
     </footer>
